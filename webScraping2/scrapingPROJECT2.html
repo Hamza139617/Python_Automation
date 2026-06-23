@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   BeautifulSoup Practice Website
+  </title>
+ </head>
+ <body style="font-family: Arial; background-color:#f5f5f5;">
+  <ol style="background-color: black;">
+   <li>
+    first element
+   </li>
+   <li>
+    second element
+   </li>
+  </ol>
+  <div id="header" style="background-color:navy; color:white; padding:20px;">
+   <h1 class="main-title">
+    Web Scraping Academy
+   </h1>
+   <p class="subtitle" data-something="what">
+    Practice your BeautifulSoup skills here.
+   </p>
+  </div>
+  <div id="navigation" style="margin-top:20px;">
+   <ul class="menu">
+    <li>
+     <a href="/home">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="/courses">
+      Courses
+     </a>
+    </li>
+    <li>
+     <a href="/about">
+      About
+     </a>
+    </li>
+    <li>
+     <a href="/contact">
+      Contact
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="featured-course" data-course-id="101" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Python Automation
+   </h2>
+   <p class="description">
+    Learn Python automation from beginner to advanced level.
+   </p>
+   <span class="price">
+    $49
+   </span>
+   <span class="rating">
+    4.8
+   </span>
+   <a href="https://example.com/python-course">
+    Visit Course
+   </a>
+  </div>
+  <div class="featured-course" data-course-id="102" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Machine Learning
+   </h2>
+   <p class="description">
+    Learn machine learning algorithms and model building.
+   </p>
+   <span class="price">
+    $79
+   </span>
+   <span class="rating">
+    4.9
+   </span>
+   <a href="https://example.com/ml-course">
+    Visit Course
+   </a>
+  </div>
+  <div id="blog-section" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Latest Blog Posts
+   </h2>
+   <div class="post" data-post-id="1">
+    <h3>
+     Introduction to Web Scraping
+    </h3>
+    <p class="author">
+     By John Smith
+    </p>
+    <p class="date">
+     2026-01-15
+    </p>
+    <a href="/blog/post1">
+     Read More
+    </a>
+   </div>
+   <div class="post" data-post-id="2">
+    <h3>
+     Understanding APIs
+    </h3>
+    <p class="author">
+     By Sarah Khan
+    </p>
+    <p class="date">
+     2026-02-11
+    </p>
+    <a href="/blog/post2">
+     Read More
+    </a>
+   </div>
+   <div class="post" data-post-id="3">
+    <h3>
+     Data Cleaning Techniques
+    </h3>
+    <p class="author">
+     By Alex Brown
+    </p>
+    <p class="date">
+     2026-03-07
+    </p>
+    <a href="/blog/post3">
+     Read More
+    </a>
+   </div>
+  </div>
+  <div id="products" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Products
+   </h2>
+   <div class="product" data-category="electronics">
+    <h3>
+     Laptop
+    </h3>
+    <p class="price">
+     $899
+    </p>
+    <img alt="Laptop Image" src="images/laptop.jpg"/>
+   </div>
+   <div class="product" data-category="electronics">
+    <h3>
+     Keyboard
+    </h3>
+    <p class="price">
+     $45
+    </p>
+    <img alt="Keyboard Image" src="images/keyboard.jpg"/>
+   </div>
+   <div class="product" data-category="accessories">
+    <h3>
+     Mouse
+    </h3>
+    <p class="price">
+     $25
+    </p>
+    <img src="images/mouse.jpg"/>
+   </div>
+  </div>
+  <div id="employees" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Employee Directory
+   </h2>
+   <table border="1" style="border-collapse:collapse;">
+    <tr>
+     <th>
+      Name
+     </th>
+     <th>
+      Department
+     </th>
+     <th>
+      Salary
+     </th>
+    </tr>
+    <tr>
+     <td>
+      Ali
+     </td>
+     <td>
+      Engineering
+     </td>
+     <td>
+      5000
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Ahmed
+     </td>
+     <td>
+      Marketing
+     </td>
+     <td>
+      4000
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Sara
+     </td>
+     <td>
+      HR
+     </td>
+     <td>
+      3500
+     </td>
+    </tr>
+   </table>
+  </div>
+  <div id="nested-section" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Nested Elements
+   </h2>
+   <div class="outer">
+    <div class="middle">
+     <div class="inner">
+      <p class="target">
+       This paragraph is deeply nested.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="form-section" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Registration Form
+   </h2>
+   <form action="/submit">
+    <input name="username" placeholder="Enter username" type="text"/>
+    <input name="email" placeholder="Enter email" type="email"/>
+    <input name="password" type="password"/>
+    <select name="country">
+     <option>
+      Pakistan
+     </option>
+     <option>
+      USA
+     </option>
+     <option>
+      Canada
+     </option>
+    </select>
+    <button type="submit">
+     Register
+    </button>
+   </form>
+  </div>
+  <div id="quotes" style="background:white; padding:15px; margin-top:20px;">
+   <h2>
+    Quotes
+   </h2>
+   <blockquote class="quote">
+    Success is the sum of small efforts repeated daily.
+   </blockquote>
+   <blockquote class="quote">
+    Knowledge is power.
+   </blockquote>
+   <blockquote>
+    Practice makes perfect.
+   </blockquote>
+  </div>
+  <footer style="background:black; color:white; padding:20px; margin-top:20px;">
+   <p id="copyright">
+    © 2026 Web Scraping Academy
+   </p>
+   <a href="https://facebook.com/company">
+    Facebook
+   </a>
+   <a href="https://linkedin.com/company/company">
+    LinkedIn
+   </a>
+  </footer>
+ </body>
+</html>

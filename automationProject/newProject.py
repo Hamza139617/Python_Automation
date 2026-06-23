@@ -1,14 +1,13 @@
-import os
-
-folder = "automationProject"
-
-iterator = 1
-
-for filename in os.listdir(os.getcwd()):
-    if filename.endswith(".pdf"):
-        os.rename(filename, f"{iterator}.pdf")
-        iterator += 1
+import requests
 
 
+response = requests.get("https://raw.githubusercontent.com/Hamza139617/resume_screener_data/main/1.pdf")
 
+file =  open("1.pdf", "wb")
 
+print(response.text)
+print(response.content)
+
+file.write(response.content)
+
+file.close()
