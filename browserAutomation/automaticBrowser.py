@@ -2,7 +2,10 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 with sync_playwright() as p:
+
     browser = p.firefox.launch(headless=False)
+
+    
     context = browser.new_context(
         viewport={"width":1280, "height":720},
         locale="en-US"
@@ -59,6 +62,7 @@ with sync_playwright() as p:
 
     page.locator("#finish").click()
 
+
     page.close()
 
     page = context.new_page();
@@ -103,5 +107,6 @@ with sync_playwright() as p:
 
 
     page.close()
+
     context.close()
     browser.close()
